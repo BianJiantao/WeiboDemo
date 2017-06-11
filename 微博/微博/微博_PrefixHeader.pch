@@ -1,0 +1,47 @@
+//
+//  微博_PrefixHeader.pch
+//  微博
+//
+//  Created by BJT on 17/5/13.
+//  Copyright © 2017年 BJT. All rights reserved.
+//
+
+#ifndef ___PrefixHeader_pch
+#define ___PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+    #ifdef __OBJC__
+
+    #ifdef DEBUG
+    #define WBLog(...)  NSLog(@"%s\n%@\n\n",__func__,[NSString stringWithFormat:__VA_ARGS__])
+    #else
+    #define WBLog(...)
+    #endif
+
+
+    #import "UIView+Extension.h"
+    #import "UIBarButtonItem+Extension.h"
+    #import "UIWindow+Extension.h"
+    #import "NSString+Extension.h"
+    #import "NSDate+Extension.h"
+    #import "NSString+Emoji.h"
+    #import "UITextView+Extension.h"
+    #import "NSMutableAttributedString+Extension.h"
+    #import "WBConst.h"
+
+    // RGB颜色
+    #define kRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+    // 随机色
+    #define  kRandomColor kRGBColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))   
+    // 通知中心
+    #define WBNotificationCenter [NSNotificationCenter defaultCenter]
+
+    #endif
+
+
+
+
+
+#endif /* ___PrefixHeader_pch */

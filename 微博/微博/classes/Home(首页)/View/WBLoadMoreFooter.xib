@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBLoadMoreFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载更多" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vze-S7-AUr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RBC-7i-wYB">
+                    <rect key="frame" x="220" y="5" width="20" height="20"/>
+                    <animations/>
+                </activityIndicatorView>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstItem="RBC-7i-wYB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DNf-6P-WLj"/>
+                <constraint firstItem="Vze-S7-AUr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DjG-QU-daS"/>
+                <constraint firstItem="RBC-7i-wYB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="60" id="U5W-9h-KK2"/>
+                <constraint firstAttribute="trailing" secondItem="Vze-S7-AUr" secondAttribute="trailing" id="fbb-Qp-oSj"/>
+                <constraint firstAttribute="bottom" secondItem="Vze-S7-AUr" secondAttribute="bottom" id="fvE-9u-7u8"/>
+                <constraint firstItem="Vze-S7-AUr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h86-Va-5rO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="319" y="305.5"/>
+        </view>
+    </objects>
+</document>
