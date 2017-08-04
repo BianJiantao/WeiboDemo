@@ -97,6 +97,7 @@
                 
                 NSTextAttachment *attach = [[NSTextAttachment alloc] init];
                 attach.image = [UIImage imageNamed:emotion.png];
+                // -4 为了文字和表情水平平齐
                 attach.bounds = CGRectMake(0, -4, font.lineHeight, font.lineHeight);
                 subStr = [NSAttributedString attributedStringWithAttachment:attach];
             }else{ // 没有找到对应表情,以文本形式拼接

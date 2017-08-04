@@ -31,6 +31,9 @@ MJCodingImplementation
 //    [encoder encodeObject:self.code forKey:@"code"];
 //}
 
-
+- (BOOL)isEqual:(WBEmotion *)other
+{
+    return [self.chs isEqualToString:other.chs] || [self.code isEqualToString:other.code];
+}
 
 @end
